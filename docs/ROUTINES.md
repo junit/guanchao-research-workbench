@@ -25,3 +25,7 @@ These cron intents match the Grok Bot template. Schedules are suggestions; adjus
 | 机会深研队列 | Weekdays 15:43 | Research-first deep-dives for high-opportunity names |
 
 Hard rules for every fire: `BRIEF-CHECKLIST.md`, holiday gate, two-tier delivery, 非投资建议.
+
+## Hard-node one-shots (importer-created)
+
+Not listed above as fixed crons. When `BRIEF-CHECKLIST` layer-2 gates fire, create a **self-deleting** one-shot for that confirmed window (company checkpoint or regime event). Morning「事件与证伪扫描」reconciles by reading `calendar/`—do not embed near-term name lists in routine prompts. Personal holdings-tied alarms stay out of this public repo.
