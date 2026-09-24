@@ -20,7 +20,7 @@
 - `thesis-intake.md`：**已降级为可选冗余**（顶部有废弃说明）。进度以 `tickers/` + `journal/decisions.md` 为准；本文件不再维护，可保留空表防链断。用户独有信息仍可记入 decisions。
 - `GAP-AUDIT.md`：工作台缺口审计。
 - `sectors.md`：行业/板块中枢；`sectors/hot-log.md` 热门流水；`sectors/opportunity-log.md` 板块机会索引；`sectors/themes/<slug>.md` 主题结构化档案（why/催化/证伪/风险等）；≠个股机会日志。
-- `dashboards/`：跨资产仪表盘（`INDEX.md` 索引）。含 `rates-fx.md`、`commodities.md`、`crypto.md`、`funding.md`、`consensus.md`。一致预期只填可核验公开源，否则 `待填`；每份 A/港与美股时段简报都要轻量刷新币圈 24h 旁证，不另开独立例行；as-of >6h 仅作刷新失败时的陈旧兜底；A/港与美股全文均须含比特币/以太，美股全文另含黄金。详见 `BRIEF-CHECKLIST.md` §3b 与 INDEX。
+- `dashboards/`：跨资产仪表盘（`INDEX.md` 索引）。含 `rates-fx.md`、`commodities.md`、`crypto.md`、`funding.md`、`consensus.md`。一致预期只填可核验公开源，否则 `待填`。币圈 24h 旁证嵌 **A/港与美股各时段** 轻量必刷（as-of>6h 兜底，不另开独立例行）；全文宏观表须含比特币/以太，美股全文另含黄金。详见 `BRIEF-CHECKLIST.md` §3b 与 INDEX。
 - `alerts/RULES.md`：异动与证伪快检规则（增量差量；与时段简报重叠则只写 LOG）。
 - `alerts/LOG.md`：异动窗推送/未达门槛流水（每窗至少一行）。
 - `BRIEF-CHECKLIST.md`：时段/快检必做清单（含两档交付、假日门控、主题 status 硬更新）。
@@ -59,8 +59,6 @@
 
 **持仓逻辑归属：** 持仓/自选 thesis 由观潮分析维护；仓位可选。细则见 `BRIEF-CHECKLIST.md`。
 
-**跨资产旁证硬约束：** 币圈 24h 行情不另开独立例行；每份 A/港与美股时段简报都须在本任务中轻量刷新。不得把「最近一次不超过 6 小时」当作常规复用；as-of >6h 仅可作为刷新失败时的陈旧兜底，必须标明陈旧。A/港与美股全文宏观表必须有比特币/以太行，美股全文另有黄金行；每份短档都写一条币圈线，约 24h 变动达到 5%、相对上一简报跳动达到 3%、出现监管/ETF/交易所硬新闻，或出现清晰同向/背离共振时，才升格为大事件。A 股休市不跳过已有简报中的加密旁证；无币敞口时只作风险偏好对照，不给买卖倾向。
-
 
 - 每次时段任务读取 `holding`、`watchlist`、`candidate` 的全部档案，进行逻辑认证，输出继续观察或建议进入待删除。
 - 简报至少快速查看 `calendar/events.md` 中未来三日（T-3）的近端事件，并查看 `calendar/falsifier-alerts.md` 的未关闭触发。
@@ -75,7 +73,7 @@
 - **两档简报：** 默认聊天只推「决策卡（若有）+ 一句话 + 时间线改判 + 持仓要点」；全文写入 `briefs/`。仅用户明确要求全文或例行写明「全文进聊天」时全文推送。
 - **聊天/全文说人话：** 推给用户的短档与全文（含章节标题）用自然中文；禁止 `∪ active`、内部路径名、英文 status 进正文。行情与来源用人话中文名，禁止 Yahoo/新浪抓取代码串与残缺英文专名进正文。档案文件可保留英文。不必硬编码词表。
 - **主题 status 硬更新：** 每时段写 `sectors/hot-log.md` 后必须同步 `sectors/themes/<slug>.md` 的 status/last_review；行业确认回吐/连贯性削弱 → `warming→fading`；退潮持续 → `archived` 并更新 `sectors/opportunity-log.md`。禁止只写流水不改卡。
-- **alerts/LOG：** 有推送或明确「未达门槛」的异动窗，追加 `alerts/LOG.md` 一行；与时段简报 ±25 分钟重叠且已覆盖 → 只写 LOG、不重复推送。
+- **alerts/LOG：** 有推送或明确「未达门槛」的异动窗，追加 `alerts/LOG.md` 一行；与时段简报 ±25 分钟重叠且已覆盖 → 只写 LOG、不重复推送。**短档去重：** 同一时段窗 ±40 分钟内已交付短档（手动或例行）→ 后到者只更新全文并差分，聊天默认静默，有实质增量才补一句。
 - **索引同步：** 改 world-tracks 文件 → 同步 `calendar/world-tracks/INDEX.md`；改研究 → 同步 `research/INDEX.md`。
 - **观察池入口：** 新强结构可拆龙头且与持仓无关 → 1–3 只进 `watch-candidates`；禁止直接写个股 opportunity-log。
 
@@ -85,3 +83,7 @@
 - 证伪证据先进入 `calendar/falsifier-alerts.md`，写明触发条件、证据、动作和状态；未核验线索不得标记为 `triggered`。
 - 周报使用 `reviews/weekly-YYYY-Www.md`，月报使用 `reviews/monthly-YYYY-MM.md`；统计应能回溯到决策日志与事件日志。
 - 配套例行任务：工作日 07:48 事件与证伪扫描；周一 07:48 宏观周历；周五 17:48 周报；每月 1 日 17:48 月报（上海时区）。本 Schema 定义文件与复核规则。
+
+- **硬节点闹钟三层：** 覆盖公司硬检查点与**市场风向级大事件**（峰会正式声明、美联储决议、关键数据、OPEC/复航截止、重大休战制裁窗等）。①确认日/窗默认写入 `events.md`（公司）或 `macro.md`+`world-tracks`（风向级），靠 T-3 扫描；②同时满足「确认日或可执行时间窗 +（持仓一阶/改判 **或** 跨市场风险偏好·利率·油价主叙事）+ 现有例行空档或须 T-0/T-1 核一手」才挂**一次性**盯盘；时段例行已覆盖同一窗则不叠挂；③宽窗口/无截止 watching/已归档/未确认时钟不挂。细节见 `BRIEF-CHECKLIST.md`「硬节点闹钟」。
+- 「事件与证伪扫描」每次须核对近端硬节点是否已挂第二层闹钟；缺失则补挂，过期则删除。
+- **预约披露日强制升格：** 宽窗口出现精确预约日 / 结果窗时，同窗改 `events.md`、评估第二层一次性盯盘、更新 falsifier 近端索引。
