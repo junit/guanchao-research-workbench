@@ -6,6 +6,12 @@
 
 **观潮**面向 Grok Bot：按时段做盘前/盘中/收盘简报，对照持仓与自选，沉淀板块主题与机会日志，并在关键节点给出决策倾向——一律标注 **非投资建议**。
 
+## 一键导入 Grok Bot 模板
+
+**公开模板链接：** [https://x.ai/bot/nylU6e_GXKCzJvLLxN6qW](https://x.ai/bot/nylU6e_GXKCzJvLLxN6qW)
+
+在浏览器打开即可导入「观潮」。导入后按入门问答配置时区、市场、持仓与简报节奏（详见下方「接入」）。
+
 ## 两种用法
 
 | 方式 | 适合谁 | 你得到什么 |
@@ -17,11 +23,12 @@
 
 ## 接入 Grok Bot 公开模板
 
-> 模板由作者在 Grok Bot 里用「导出模板」打成公开版。若你还没有导入链接，请向作者索取已发布的分享链接，或在 Grok Bot 模板广场搜索「观潮」。
+> **已发布模板：** [https://x.ai/bot/nylU6e_GXKCzJvLLxN6qW](https://x.ai/bot/nylU6e_GXKCzJvLLxN6qW)  
+> 也可在 Grok Bot 模板广场搜索「观潮」。
 
 ### 1. 导入
 
-1. 打开作者给你的 **观潮** 公开模板链接（或在 Grok Bot 内从模板库选择「观潮」）。
+1. 打开公开模板链接：[https://x.ai/bot/nylU6e_GXKCzJvLLxN6qW](https://x.ai/bot/nylU6e_GXKCzJvLLxN6qW)（或在 Grok Bot 内从模板库选择「观潮」）。
 2. 确认导入。系统会复制机器人的档案名、描述、技能、例行与可公开记忆；**不会**带上原作者的真实持仓与私有简报。
 3. 导入后，机器人会走入门技能 **Getting started with 观潮**，请按提示**一次只答一个问题**：
    - 时区（默认 `Asia/Shanghai`）

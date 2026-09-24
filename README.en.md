@@ -6,6 +6,12 @@ This repository publishes **research process docs and an empty workbench skeleto
 
 **Guanchao** is designed for [Grok Bot](https://cursor.com): session briefs (pre-open through close), holdings/watchlist mapping, sector theme cards, opportunity logs, and optional decision stances — always labeled **not investment advice**.
 
+## Import the Grok Bot template
+
+**Public template:** [https://x.ai/bot/nylU6e_GXKCzJvLLxN6qW](https://x.ai/bot/nylU6e_GXKCzJvLLxN6qW)
+
+Open the link to import **Guanchao (观潮)**. Then answer the getting-started prompts (timezone, markets, holdings, brief cadence) — see below.
+
 ## Two ways to use it
 
 | Path | Best for | You get |
@@ -17,11 +23,12 @@ They complement each other: the template **runs**; the repo is **reviewable and 
 
 ## Import the Grok Bot public template
 
-> The author exports a **Public** template from Grok Bot. If you do not have an import link yet, ask the author for the published share URL, or search for **观潮 / Guanchao** in the Grok Bot template gallery.
+> **Published template:** [https://x.ai/bot/nylU6e_GXKCzJvLLxN6qW](https://x.ai/bot/nylU6e_GXKCzJvLLxN6qW)  
+> You can also search for **观潮 / Guanchao** in the Grok Bot template gallery.
 
 ### 1. Import
 
-1. Open the author’s **Guanchao** public template link (or pick **观潮** from the in-app template library).
+1. Open the public template: [https://x.ai/bot/nylU6e_GXKCzJvLLxN6qW](https://x.ai/bot/nylU6e_GXKCzJvLLxN6qW) (or pick **观潮** from the in-app template library).
 2. Confirm import. Grok Bot copies profile, skills, routines, and shareable memories — **not** the author’s real portfolio or private briefs.
 3. On first chat, the bot runs **Getting started with 观潮**. Answer **one question at a time**:
    - Timezone (default `Asia/Shanghai`)
