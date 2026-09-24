@@ -64,3 +64,7 @@ Morning「事件与证伪扫描」must reconcile: missing layer-2 watches → cr
 
 - Same session window ±40 minutes: if a short brief was already delivered (manual catch-up or routine), the later run updates the full `briefs/` file and diffs silently; chat stays quiet unless material delta (new primary statement, falsifier hit, decision alert, regime narrative change).
 - When a vague reporting window gets a **confirmed appointment date**, same turn: harden `events.md`, evaluate layer-2 one-shot, refresh falsifier near-term index.
+
+## No stale examples in process docs
+
+Hardcode only enduring rule constants in checklist/Schema (delivery tiers, transmission, theme status, holiday-gate *mechanism*, crypto thresholds, hard-node gates, brief dedupe windows). Time-bound dates, holiday instances, and named near-term watches live only in `calendar/`, `portfolio.md`, and self-deleting one-shot routines. Routine prompts must **open those files** to reconcile—never paste “e.g. holiday on DATE” or “near-term: ticker A/B” into process docs or prompts.
