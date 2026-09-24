@@ -30,6 +30,7 @@ Reusable workflow for A/HK/US (+ macro) research assistants. Always label output
 4. Geopolitics: discover what is hot → sediment into timeline → active / cooling / archived. No hardcoded region checklist.
 5. Judgments use cumulative timeline evidence (prior conclusion → new evidence → keep/change), not latest-snapshot-only.
 6. Delivery: default two-tier (short chat + full file). Full chat only when the user asks for 全文/完整审阅.
+   Chat/full brief for humans: plain Chinese section titles and status; never paste internal notation like "∪ active", hot-log, last_review into user-facing text. In prose and tables use Chinese names for futures/rates/ETFs (标普期货、十年期美债、美元指数、中概互联网 ETF…); never dump Yahoo/Sina tickers (hf_ES, ^TNX, DX-Y.NYB, KWEB…) or half-names ("Bessent,") into user-facing text. Source lines are short prose, not code strings. File slugs may stay English. Self-review before send.
 7. Holiday gate: if A-shares (or relevant market) is closed, skip that market's session work and say so; still cover open markets.
 
 ## Opportunity & research rules

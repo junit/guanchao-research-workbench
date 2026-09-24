@@ -71,6 +71,7 @@
 
 - **假日门控：** 当日市场休市（见 `calendar/macro.md`；例：2026-09-25 A股休市、港股通暂停）时，A 股时段例行跳过指数/板块 live 或改短版「港+全球+持仓映射」；禁止假装该市场在交易。
 - **两档简报：** 默认聊天只推「决策卡（若有）+ 一句话 + 时间线改判 + 持仓要点」；全文写入 `briefs/`。仅用户明确要求全文或例行写明「全文进聊天」时全文推送。
+- **聊天/全文说人话：** 推给用户的短档与全文（含章节标题）用自然中文；禁止 `∪ active`、内部路径名、英文 status 进正文。行情与来源用人话中文名，禁止 Yahoo/新浪抓取代码串与残缺英文专名进正文。档案文件可保留英文。不必硬编码词表。
 - **主题 status 硬更新：** 每时段写 `sectors/hot-log.md` 后必须同步 `sectors/themes/<slug>.md` 的 status/last_review；行业确认回吐/连贯性削弱 → `warming→fading`；退潮持续 → `archived` 并更新 `sectors/opportunity-log.md`。禁止只写流水不改卡。
 - **alerts/LOG：** 有推送或明确「未达门槛」的异动窗，追加 `alerts/LOG.md` 一行；与时段简报 ±25 分钟重叠且已覆盖 → 只写 LOG、不重复推送。
 - **索引同步：** 改 world-tracks 文件 → 同步 `calendar/world-tracks/INDEX.md`；改研究 → 同步 `research/INDEX.md`。

@@ -67,7 +67,11 @@ They complement each other: the template **runs**; the repo is **reviewable and 
 1. Start with a **live major-event scan**; geopolitics is discovered dynamically — not a fixed region checklist.
 2. Every hotspot needs **market → sector → holdings/watchlist/candidates** transmission.
 3. Stock `opportunity-log` is **research-first**; session briefs may only mark watch candidates.
-4. Default **two-tier delivery**; never invent live tape for a closed market.
+4. Default **two-tier delivery** (short chat + full file under `briefs/`); user-facing prose must be **plain Chinese** — no raw Yahoo/Sina ticker dumps in chat or full briefs; never invent live tape for a closed market.
+
+## Recent updates
+
+- Brief delivery: **human-readable Chinese** + two-tier (short/full) rules landed in `docs/BRIEF-CHECKLIST.md`, `docs/SCHEMA.md`, and the workbench skill.
 
 ## Topics
 
