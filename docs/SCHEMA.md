@@ -20,7 +20,7 @@
 - `thesis-intake.md`：**已降级为可选冗余**（顶部有废弃说明）。进度以 `tickers/` + `journal/decisions.md` 为准；本文件不再维护，可保留空表防链断。用户独有信息仍可记入 decisions。
 - `GAP-AUDIT.md`：工作台缺口审计。
 - `sectors.md`：行业/板块中枢；`sectors/hot-log.md` 热门流水；`sectors/opportunity-log.md` 板块机会索引；`sectors/themes/<slug>.md` 主题结构化档案（why/催化/证伪/风险等）；≠个股机会日志。
-- `dashboards/`：跨资产仪表盘（`INDEX.md` 索引）。含 `rates-fx.md`、`commodities.md`、`crypto.md`、`funding.md`、`consensus.md`。一致预期只填可核验公开源，否则 `待填`；更新节奏见 INDEX。
+- `dashboards/`：跨资产仪表盘（`INDEX.md` 索引）。含 `rates-fx.md`、`commodities.md`、`crypto.md`、`funding.md`、`consensus.md`。一致预期只填可核验公开源，否则 `待填`；币圈 24h 旁证嵌美股相关时段必刷（as-of >6h 重刷，不另开独立例行）；美股相关全文宏观表须含黄金 + 比特币/以太。详见 `BRIEF-CHECKLIST.md` §3b 与 INDEX。
 - `alerts/RULES.md`：异动与证伪快检规则（增量差量；与时段简报重叠则只写 LOG）。
 - `alerts/LOG.md`：异动窗推送/未达门槛流水（每窗至少一行）。
 - `BRIEF-CHECKLIST.md`：时段/快检必做清单（含两档交付、假日门控、主题 status 硬更新）。
@@ -58,6 +58,8 @@
 **时间线证据硬约束：** 简报必须含「时间线」段：上次结论 → 新增证据 → 是否改判；并对照 `calendar/`、`tickers/`、必要时 `journal/decisions.md`。禁止只凭当日碎片改结论。
 
 **持仓逻辑归属：** 持仓/自选 thesis 由观潮分析维护；仓位可选。细则见 `BRIEF-CHECKLIST.md`。
+
+**跨资产旁证硬约束：** 币圈 24h 行情不另开独立例行，嵌入美股盘前、开盘、盘中、收盘、盘后/隔夜汇总及相关手动刷新；A/港时段可复用最近一次不超过 6 小时的仪表，超过 6 小时或相对上一简报明显跳动时重刷。美股相关全文宏观表必须有黄金与比特币/以太行；短档默认一行币，只有约 24h 变动达到 5%、相对上一简报跳动达到 3%、出现监管/ETF/交易所硬新闻，或需解释其与纳指期货的明显同向/背离时，才升格为大事件。A 股休市不跳过加密旁证；无币敞口时只作风险偏好对照，不给买卖倾向。
 
 
 - 每次时段任务读取 `holding`、`watchlist`、`candidate` 的全部档案，进行逻辑认证，输出继续观察或建议进入待删除。

@@ -32,6 +32,7 @@ Reusable workflow for A/HK/US (+ macro) research assistants. Always label output
 6. Delivery: default two-tier (short chat + full file). Full chat only when the user asks for 全文/完整审阅.
    Chat/full brief for humans: plain Chinese section titles and status; never paste internal notation like "∪ active", hot-log, last_review into user-facing text. In prose and tables use Chinese names for futures/rates/ETFs (标普期货、十年期美债、美元指数、中概互联网 ETF…); never dump Yahoo/Sina tickers (hf_ES, ^TNX, DX-Y.NYB, KWEB…) or half-names ("Bessent,") into user-facing text. Source lines are short prose, not code strings. File slugs may stay English. Self-review before send.
 7. Holiday gate: if A-shares (or relevant market) is closed, skip that market's session work and say so; still cover open markets.
+8. Cross-asset side checks (gold + crypto): crypto trades 24h — do **not** add a separate always-on cron. Refresh `dashboards/crypto.md` on US preopen/open/mid/close/afterhours (and evening refreshes); if as-of is >6h stale, refresh even on A/HK sessions. US-facing **full** briefs must include gold + BTC/ETH rows (Chinese names in user text). US-facing **short** briefs: default one crypto macro line; promote to 大事件 only if |24h|≥5%, vs prior brief jump ≥3%, hard regulatory/ETF/exchange news, or clear risk-on/off co-move with equity futures that needs explanation. A-share holiday gate does **not** skip crypto.
 
 ## Opportunity & research rules
 
