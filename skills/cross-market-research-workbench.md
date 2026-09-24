@@ -1,10 +1,3 @@
----
-name: Cross-market research workbench
-description: >-
-  Use this when building or maintaining a market research workbench, writing a
-  session/overnight brief, logging sector themes or stock opportunities, or
-  reviewing holdings against live events.
----
 # Cross-market research workbench
 
 Reusable workflow for A/HK/US (+ macro) research assistants. Always label outputs 非投资建议.
@@ -68,3 +61,8 @@ Morning「事件与证伪扫描」must reconcile: missing layer-2 watches → cr
 ## No stale examples in process docs
 
 Hardcode only enduring rule constants in checklist/Schema (delivery tiers, transmission, theme status, holiday-gate *mechanism*, crypto thresholds, hard-node gates, brief dedupe windows). Time-bound dates, holiday instances, and named near-term watches live only in `calendar/`, `portfolio.md`, and self-deleting one-shot routines. Routine prompts must **open those files** to reconcile—never paste “e.g. holiday on DATE” or “near-term: ticker A/B” into process docs or prompts.
+
+## Clocks and operator paths
+
+- Anomaly scan times: **single source of truth = the enabled「异动与证伪快检」cron** (currently weekdays 10:22 / 13:22 / 15:22 Asia/Shanghai). When the cron changes, update `alerts/RULES.md` in the same turn; never keep a second clock table in other docs.
+- Dashboard INDEX may list Yahoo/Sina/EastMoney fetch codes for operators; those codes **must never** appear in user-facing short/full briefs—use Chinese instrument names.
