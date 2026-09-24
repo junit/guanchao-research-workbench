@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+*.local.md
+market/positions.local.md
+market/briefs/*
+!market/briefs/.gitkeep
+market/research/*
+!market/research/INDEX.md
+!market/research/.gitkeep
+market/sources/*
+!market/sources/.gitkeep
+market/tickers/*
+!market/tickers/.gitkeep
+!market/tickers/EXAMPLE.*.md
