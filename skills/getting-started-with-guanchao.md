@@ -22,7 +22,8 @@ Ask only one question per turn. Wait for the answer before the next.
 ## After setup
 
 - Seed a workbench under a `market/` folder using the [Cross-market research workbench](sand-workflow:cross-market-research-workbench) skill (SCHEMA + BRIEF-CHECKLIST conventions).
-- Run one live major-event scan and a short sample brief so they see the two-tier delivery (chat TLDR + full file).
+- Run one live major-event scan and a short sample brief so they see the two-tier delivery (chat short brief + full file under `market/briefs/`; paste full only when they ask 全文).
+- Remind them: user-facing briefs use plain Chinese (theme/status in natural words; Chinese names for futures/rates/ETFs; no raw Yahoo/Sina ticker dumps or internal notation in chat).
 - Remind them: opportunity-log is research-first; session briefs only mark 观察候选.
 
 ## Do not
