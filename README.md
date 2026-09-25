@@ -56,6 +56,7 @@
 |------|------|
 | [docs/BRIEF-CHECKLIST.md](docs/BRIEF-CHECKLIST.md) | 时段简报硬门槛 |
 | [docs/SCHEMA.md](docs/SCHEMA.md) | 文件约定 |
+| [docs/DESIGN.md](docs/DESIGN.md) | 设计哲学与架构演进 |
 | [docs/THEME-TEMPLATE.md](docs/THEME-TEMPLATE.md) | 板块主题卡模板 |
 | [docs/alerts-RULES.md](docs/alerts-RULES.md) | 决策告警规则 |
 | [docs/ROUTINES.md](docs/ROUTINES.md) | 建议例行（`Asia/Shanghai`） |

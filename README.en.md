@@ -56,6 +56,7 @@ They complement each other: the template **runs**; the repo is **reviewable and 
 |------|---------|
 | [docs/BRIEF-CHECKLIST.md](docs/BRIEF-CHECKLIST.md) | Hard gates for every session brief |
 | [docs/SCHEMA.md](docs/SCHEMA.md) | File contracts |
+| [docs/DESIGN.md](docs/DESIGN.md) | Design philosophy and architecture evolution |
 | [docs/THEME-TEMPLATE.md](docs/THEME-TEMPLATE.md) | Sector theme card template |
 | [docs/alerts-RULES.md](docs/alerts-RULES.md) | Decision-alert rules |
 | [docs/ROUTINES.md](docs/ROUTINES.md) | Suggested routines (`Asia/Shanghai`) |
