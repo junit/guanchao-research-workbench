@@ -24,7 +24,7 @@ These cron intents match the Grok Bot template. Schedules are suggestions; adjus
 | 研究员月报 | 1st 17:48 | Formal monthly body + GAP |
 | 机会深研队列 | Weekdays 15:43 | Research-first deep-dives for high-opportunity names |
 
-Hard rules for every fire: `BRIEF-CHECKLIST.md`, holiday gate, two-tier delivery, 非投资建议.
+Hard rules for every fire: `BRIEF-CHECKLIST.md`, holiday gate, two-tier delivery, 非投资建议. Light X discovery via `market/sources/x-watchlist.md` (发现候选 only; skip if no credits).
 
 ## Hard-node one-shots (importer-created)
 

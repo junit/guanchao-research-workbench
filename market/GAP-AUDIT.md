@@ -1,6 +1,6 @@
 # Gap audit (mechanism snapshot)
 
-As-of: 2026-09-24 23:16 CST
+As-of: 2026-09-25 19:45 CST
 
 > Dated snapshot, not the live rulebook. Mechanisms live in `docs/BRIEF-CHECKLIST.md`, `docs/SCHEMA.md`, `docs/alerts-RULES.md`. Near-term dates and alarms live only in `market/calendar/` (importer fills). No personal holdings lists here.
 
@@ -11,6 +11,7 @@ As-of: 2026-09-24 23:16 CST
 - [x] Process docs forbid stale date/name examples
 - [x] Anomaly routine clocks: **single source of truth = enabled cron** (currently weekdays 10:22 / 13:22 / 15:22 Asia/Shanghai); `docs/alerts-RULES.md` must match
 - [x] Dashboard fetch paths (Yahoo/Sina/API codes) are **operator-only** — never paste into user-facing brief prose
+- [x] Curated X discovery layer (`market/sources/x-watchlist.md`); not personal follows; promote only with wire/primary; **first live window still to prove**
 
 ## Still open (mechanism)
 1. Next equity session: live sector hot-log + theme status hard update
@@ -22,4 +23,4 @@ As-of: 2026-09-24 23:16 CST
 - Portfolio codes → `market/portfolio.md` (personal; not in public template body)
 - A second copy of cron times → enabled routines only
 
-Updated: 2026-09-24 23:16 CST
+Updated: 2026-09-25 19:45 CST

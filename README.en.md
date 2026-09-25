@@ -73,6 +73,7 @@ They complement each other: the template **runs**; the repo is **reviewable and 
 
 ## Recent updates
 
+- Curated **X discovery layer**: `market/sources/x-watchlist.md`; never personal follows; promote only with wire/primary.
 - Brief delivery: **human-readable Chinese** + two-tier (short/full) rules landed in `docs/BRIEF-CHECKLIST.md`, `docs/SCHEMA.md`, and the workbench skill.
 - Cross-asset side checks: embed crypto 24h context in US-session refreshes, with no separate routine; full briefs include gold and BTC/ETH.
 - The market skeleton is now complete for import: reviews templates, comps, dashboard shells, and `calendar/world-tracks/INDEX.md` are included as empty process templates.

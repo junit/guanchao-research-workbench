@@ -10,7 +10,7 @@ Reusable workflow for A/HK/US (+ macro) research assistants. Always label output
 - `market/tickers/<code>.md` — thesis, catalysts, falsifiers, risks, status
 - `market/sectors/hot-log.md` + `opportunity-log.md` + `themes/<slug>.md`
 - `market/opportunity-log.md` — stock opportunities (index only after research-first)
-- `market/research/` + `sources/` — deep reports and filings notes
+- `market/research/` + `sources/` — deep reports and filings notes; `sources/x-watchlist.md` curated X discovery (not personal follows)
 - `market/world-tracks/` + `global-hot-log.md` — dynamic geopolitics timeline
 - `market/alerts/RULES.md` + `LOG.md` — decision alert rules and history
 - `market/GAP-AUDIT.md` — open gaps
@@ -18,6 +18,7 @@ Reusable workflow for A/HK/US (+ macro) research assistants. Always label output
 ## Brief hard gates
 
 1. Live major-event scan first (macro, geopolitics, policy, holdings flashes). If nothing material, say so explicitly.
+1b. **X discovery layer (optional light scan):** open `sources/x-watchlist.md`; scan curated Tier A+B recent posts + 2–4 keyword searches. Log hits as 发现候选 only. Never use the operator's personal Following list. Never promote to 大事件 / decision alert on social alone — require wire/primary cross-check. If X unavailable or credits low, note skip reason in methods; do not block the brief.
 2. Every hotspot needs **三层传导**: 市场 → 板块 → 持仓/自选/候选 (name codes). Do not dismiss with a bare 弱相关.
 3. Sector layer: that day's hot industries are the foundation, then map to holdings/watchlist/candidates. Maintain hot-log for continuity; theme cards for structured opportunities.
 4. Geopolitics: discover what is hot → sediment into timeline → active / cooling / archived. No hardcoded region checklist.

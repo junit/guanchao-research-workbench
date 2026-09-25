@@ -138,6 +138,7 @@ market/
 │   └── <code>.md               # F 深研正文
 ├── sources/
 │   ├── INDEX.md
+│   ├── x-watchlist.md          # P 策展 X 发现层（非个人关注；非一手）
 │   └── <code>/                 # F 一手摘录
 ├── comps/
 │   ├── INDEX.md
@@ -156,6 +157,7 @@ market/
 ```
 docs/BRIEF-CHECKLIST.md, SCHEMA.md, DESIGN.md, ROUTINES.md,
      THEME-TEMPLATE.md, alerts-RULES.md, IMPLEMENTATION.md
+market/sources/x-watchlist.md   # P 策展发现层（无私人关注列表）
 skills/cross-market-research-workbench.md
 skills/getting-started-with-guanchao.md
 market/   # 空骨架 + EXAMPLE
@@ -192,7 +194,7 @@ market/   # 空骨架 + EXAMPLE
 
 **每条例行共用硬前缀（写入每个 prompt 开头）：**
 
-> 打开并遵守 `market/BRIEF-CHECKLIST.md` 与 `market/SCHEMA.md`。假日门控只查 `calendar/macro.md`（必要时对照交易所公告）。币圈：本窗轻量刷新 `dashboards/crypto.md`（as-of>6h 必须重刷）；A 休市仍刷加密旁证。两档交付：默认聊天短档（决策卡若有 + 一句话结论 + 时间线改判 + 持仓要点），全文写入 `briefs/YYYY-MM-DD-<slug>.md`；仅用户要「全文」或本 prompt 写明「全文进聊天」才贴全文。说人话：中文品名，禁止 Yahoo/新浪抓取代码串与内部记号进聊天。近端日期与硬节点只读 `calendar/`，禁止臆造。文末非投资建议。
+> 打开并遵守 `market/BRIEF-CHECKLIST.md` 与 `market/SCHEMA.md`。假日门控只查 `calendar/macro.md`（必要时对照交易所公告）。币圈：本窗轻量刷新 `dashboards/crypto.md`（as-of>6h 必须重刷）；A 休市仍刷加密旁证。大事件扫描可并行打开 `sources/x-watchlist.md` 做轻量 X 发现（发现候选 only；禁止个人关注列表；禁止仅凭社媒升格；连接/额度不足则注明跳过、不阻塞）。两档交付：默认聊天短档（决策卡若有 + 一句话结论 + 时间线改判 + 持仓要点），全文写入 `briefs/YYYY-MM-DD-<slug>.md`；仅用户要「全文」或本 prompt 写明「全文进聊天」才贴全文。说人话：中文品名，禁止 Yahoo/新浪抓取代码串与内部记号进聊天。近端日期与硬节点只读 `calendar/`，禁止臆造。文末非投资建议。
 
 ---
 
@@ -205,7 +207,7 @@ market/   # 空骨架 + EXAMPLE
 ```
 【A/港盘前】执行共用硬前缀。本窗 slug 建议 a-hk-premarket。
 1) 假日门控：读 calendar/macro.md；若 A 休市则跳过 A live 指数/板块或改短版「港+全球+持仓映射」，禁止假装 A 在交易。
-2) 实时大事件扫描（无地区打卡偏置）→ 对照 global-hot-log 与 world-tracks 增删降温。
+2) 实时大事件扫描（无地区打卡偏置）→ 打开 sources/x-watchlist.md 轻量 X 发现（A+B 子集 + 2–4 关键词；发现候选 only；禁个人关注/禁仅社媒升格）→ 对照 global-hot-log 与 world-tracks 增删降温。
 3) 指数与量能（开市市场）；刷新 crypto；宏观旁证。
 4) 行业板块（热门基础→hot-log→映射持仓）并同步 themes status。
 5) 持仓/自选/候选逻辑复查；T-3 扫 events + falsifier。
@@ -450,7 +452,7 @@ market/   # 空骨架 + EXAMPLE
 ```
 READ BRIEF-CHECKLIST, SCHEMA, portfolio, 相关 tickers,
      calendar/macro+events+falsifier+global-hot-log+world-tracks/INDEX,
-     sectors/hot-log+themes, dashboards/crypto(+美股则 commodities/rates),
+     sources/x-watchlist, sectors/hot-log+themes, dashboards/crypto(+美股则 commodities/rates),
      最近同窗 brief（供去重/差量）
 
 IF market_closed(today, market) per macro.md:
@@ -459,6 +461,9 @@ IF market_closed(today, market) per macro.md:
     # 假日门控不跳过 crypto
 
 1. LIVE major-event scan (no region checklist)
+   open sources/x-watchlist.md → light X scan (Tier A+B subset + 2–4 keywords)
+   hits = 发现候选 only; NEVER personal Following; NEVER promote on social alone
+   (X down / low credits → note skip in methods; do not block brief)
    discover → diff vs hot-log/tracks → add/upgrade/cooling/archive
    each item: 是什么 / 最新状态(来源时点) / 相对上次 / 三层传导
 
