@@ -12,6 +12,8 @@ market/research/*
 !market/research/.gitkeep
 market/sources/*
 !market/sources/.gitkeep
+!market/sources/INDEX.md
 market/tickers/*
 !market/tickers/.gitkeep
+!market/tickers/EXAMPLE.md
 !market/tickers/EXAMPLE.*.md
